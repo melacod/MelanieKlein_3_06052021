@@ -14,4 +14,22 @@ body {
   box-sizing: border-box;
 }
 
+.logo__header {
+  text-align: center;
+  padding: 10px;
+  align-items: center;
+}
+
+.header__logo {
+  text-align: center;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 14px;
+  align-items: center;
+}
+
+main {
+  width: 80%;
+}
+
 /*# sourceMappingURL=style.css.map */
