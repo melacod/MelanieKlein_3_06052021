@@ -1,8 +1,20 @@
-.header__logo
+.header
 {
+    &__logo
+    {
+    block-size: 160px;
     text-align: center;
-    padding: 10px;
     padding-top: 20px;
     padding-bottom: 14px;
     align-items: center;
+    }
+
+    &__back{
+        display: inline;
+        padding-left: 25px;
+
+        &--disabled{
+            visibility: hidden;
+        }
+    }
 }

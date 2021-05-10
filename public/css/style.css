@@ -21,11 +21,18 @@ body {
 }
 
 .header__logo {
+  block-size: 160px;
   text-align: center;
-  padding: 10px;
   padding-top: 20px;
   padding-bottom: 14px;
   align-items: center;
+}
+.header__back {
+  display: inline;
+  padding-left: 25px;
+}
+.header__back--disabled {
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
