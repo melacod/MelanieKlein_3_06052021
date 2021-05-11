@@ -40,7 +40,6 @@ h2 {
 strong {
   font-family: "Roboto", sans-serif;
   text-align: left;
-  padding: 10px;
   width: 70%;
   color: black;
 }
@@ -49,8 +48,6 @@ small {
   font-family: "Roboto", sans-serif;
   text-align: left;
   width: 85%;
-  padding: 10px;
-  padding-bottom: 30px;
   color: black;
 }
 
@@ -167,6 +164,57 @@ small {
   display: none;
 }
 
+.restaurants {
+  height: 1220px;
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 250px;
+  border: #f6f6f6 solid 2px;
+  border-radius: 15px;
+  background-color: white;
+  margin: 20px;
+}
+.restaurant__image {
+  height: calc(100% - 75px);
+}
+.restaurant__image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurant__text {
+  height: 75px;
+  width: 100%;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurant__text div {
+  width: 50%;
+}
+.restaurant__text div * {
+  display: block;
+  width: 100%;
+  padding-left: 10px;
+}
+.restaurant__text div i {
+  text-align: right;
+  padding-right: 20px;
+}
+.restaurant__text div i:hover {
+  color: #9356DC;
+  background-color: #9356DC;
+}
+
 .header {
   height: 66px;
   padding-top: 24px;
@@ -227,6 +275,9 @@ small {
     margin-top: 25px;
     font-size: 1.4rem;
     width: 195px;
+  }
+  main .restaurants {
+    width: 100%;
   }
 }
 

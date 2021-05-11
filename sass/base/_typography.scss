@@ -26,7 +26,6 @@ strong
 {
     @include font-texte();
     text-align: left;
-    padding: 10px;
     width: 70%;
     color: black;
 }
@@ -36,8 +35,6 @@ small
     @include font-texte();
     text-align: left;
     width: 85%;
-    padding: 10px;
-    padding-bottom: 30px;
     color: black;
 }
 

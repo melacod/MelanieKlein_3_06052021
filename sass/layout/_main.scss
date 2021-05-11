@@ -1,8 +1,7 @@
-main
-{
+main {
     @media (min-width: 768px) {
-       width: 60%;
-       margin: auto;
+        width: 60%;
+        margin: auto;
     }
 
     @media (min-width: 1024px) {
@@ -13,8 +12,7 @@ main
         justify-content: center;
         align-items: center;
 
-        .search
-        {
+        .search {
             height: 350px;
             padding: 0;
             background-color: white;
@@ -22,19 +20,17 @@ main
             margin: 30px;
             margin-top: 50px;
 
-            .searchbar > i
-            {
+            .searchbar>i {
                 font-size: 1.6rem;
                 color: $color-primary;
             }
         }
 
-        .searchbar
-        {
+        .searchbar {
             background-color: white;
-           
 
-            input{
+
+            input {
                 background-color: white;
                 border-bottom: solid 2px $color-primary;
                 margin-top: 25px;
@@ -42,5 +38,9 @@ main
                 width: 195px;
             }
         }
-     }
+
+        .restaurants {
+            width: 100%;
+        }
+    }
 }
