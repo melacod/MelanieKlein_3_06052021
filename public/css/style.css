@@ -41,4 +41,12 @@ a {
   content: "";
 }
 
+@media (min-width: 1024px) {
+  .header {
+    height: 66px;
+    padding-top: 24px;
+    width: 40%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
