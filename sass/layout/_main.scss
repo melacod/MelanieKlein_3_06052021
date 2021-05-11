@@ -1,0 +1,17 @@
+main
+{
+    @media (min-width: 667px) {
+       width: 60%;
+       margin: auto;
+    }
+
+    @media (min-width: 1024px) {
+        width: 65%;
+        margin: auto;
+
+        .search
+        {
+            height: 270px;
+        }
+     }
+}
