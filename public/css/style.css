@@ -14,25 +14,31 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .logo__header {
   text-align: center;
   padding: 10px;
   align-items: center;
 }
 
-.header__logo {
-  block-size: 160px;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 14px;
+.header {
+  height: 66px;
+  padding-top: 24px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
   align-items: center;
 }
-.header__back {
-  display: inline;
-  padding-left: 25px;
-}
-.header__back--disabled {
+.header__back--hidden {
   visibility: hidden;
+}
+.header::after {
+  content: "";
 }
 
 /*# sourceMappingURL=style.css.map */

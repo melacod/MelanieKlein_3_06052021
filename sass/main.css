@@ -37,6 +37,7 @@ body {
 .header__back {
   display: inline;
   padding-left: 25px;
+  padding-top: 27px;
 }
 
 .header__back--disabled {
