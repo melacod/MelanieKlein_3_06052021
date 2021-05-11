@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 *,
 *::after,
 *::before {
@@ -15,14 +17,19 @@ a {
   color: black;
 }
 
+input {
+  border: none;
+  background-color: inherit;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+  color: black;
 }
 
 h1 {
   font-family: "Roboto", sans-serif;
-  padding: 12px;
-  padding-top: 38px;
+  color: black;
   font-size: 1.55rem;
 }
 @media (min-width: 1024px) {
@@ -33,151 +40,45 @@ h1 {
 
 h2 {
   font-family: "Roboto", sans-serif;
-  padding-top: 30px;
+  color: black;
   padding: 20px;
 }
 
 strong {
   font-family: "Roboto", sans-serif;
-  text-align: left;
-  width: 70%;
   color: black;
+  font-size: 1.05rem;
 }
 
 small {
   font-family: "Roboto", sans-serif;
-  text-align: left;
-  width: 85%;
   color: black;
+  font-size: 0.95rem;
 }
 
-.description {
-  width: 98%;
-  font-size: 1.1rem;
-  font-weight: 300;
-}
-@media (min-width: 1024px) {
-  .description {
-    font-size: 1.2rem;
-  }
+input {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
-.btn {
-  background: radial-gradient(at 10% 90%, #9356DC, #FF79DA);
-  opacity: 1;
+.button {
+  font-family: "Roboto", sans-serif;
+  color: black;
   color: white;
-  border: #FF79DA solid 0.1px;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
   border-radius: 25px;
   text-align: center;
-  padding: 14px;
-  margin: 25px;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  padding: 14px 21px 14px 21px;
+  font-weight: 500;
   font-size: 1rem;
   box-shadow: 0px 5px 10px 1px #cecccc;
   border: 1px solid #cecccc;
-  width: 220px;
 }
 @media (min-width: 1024px) {
-  .btn {
-    width: 260px;
+  .button {
     font-size: 1.1rem;
-  }
-}
-
-.search {
-  width: 375px;
-  text-align: center;
-  background-color: #f6f6f6;
-  padding-bottom: 20px;
-  padding-top: 0;
-  padding-left: 0;
-  padding-right: 0;
-  height: 338px;
-  border-top: 2px solid #cecccc;
-}
-.search h1 {
-  width: 75%;
-  margin: auto;
-}
-
-.searchbar {
-  background-color: #eaeaea;
-  padding: 10px;
-  height: 50px;
-}
-.searchbar input {
-  border: none;
-  background-color: #eaeaea;
-  font-weight: 500;
-  font-size: 1rem;
-  font-family: "Roboto", sans-serif;
-  padding-top: 5px;
-  margin-left: 10px;
-  width: 145px;
-  color: #4b4b4b;
-}
-
-.operation {
-  width: 375px;
-}
-
-.step {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #f6f6f6;
-  margin: 25px;
-  margin-top: 12px;
-  padding: 22px;
-  padding-right: 60px;
-  padding-left: 15px;
-  border-radius: 25px;
-  box-shadow: 1px 1px 25px #cecccc;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-.step__number {
-  color: white;
-  background-color: #9356DC;
-  padding-left: 9px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 4px;
-  border-radius: 100%;
-  margin-left: -30px;
-  font-size: 1rem;
-}
-
-.step:hover, .step:checked {
-  background-color: #e4d5f6;
-}
-
-.fi {
-  color: #9356DC;
-  width: 30px;
-  text-align: center;
-}
-
-.step > input {
-  display: none;
-}
-
-.restaurants {
-  height: 1220px;
-  background-color: #f6f6f6;
-  padding-top: 35px;
-}
-@media (min-width: 1024px) {
-  .restaurants {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-    border-radius: 25px;
   }
 }
 
@@ -185,12 +86,11 @@ small {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 255px;
-  background-color: #eaeaea;
-  border: #f6f6f6 solid 2px;
+  height: 250px;
+  border: none;
   border-radius: 15px;
-  background-color: white;
-  margin: 20px;
+  box-shadow: 1px 1px 15px #cecccc;
+  margin: 0 20px 20px 20px;
 }
 @media (min-width: 768px) {
   .restaurant {
@@ -200,6 +100,7 @@ small {
 }
 .restaurant__image {
   height: calc(100% - 75px);
+  width: 100%;
 }
 .restaurant__image img {
   height: 100%;
@@ -207,23 +108,23 @@ small {
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
-.restaurant__image span {
+.restaurant__image--nouveau::after {
+  content: "Nouveau";
+  position: absolute;
+  margin-left: -93px;
+  margin-top: 15px;
   color: #008766;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   height: 30px;
   width: 80px;
   font-weight: 500;
   text-align: center;
   padding-top: 5px;
   border-radius: 3px;
-  position: absolute;
-  margin-left: -93px;
-  margin-top: 15px;
 }
 .restaurant__text {
   height: 75px;
   width: 100%;
-  background-color: white;
   border-radius: 0 0 20px 20px;
   display: flex;
   flex-direction: row;
@@ -231,26 +132,143 @@ small {
   justify-content: space-between;
   align-items: center;
 }
-.restaurant__text div {
-  width: 50%;
+.restaurant__text .name {
+  flex: 1;
 }
-.restaurant__text div * {
+.restaurant__text .name * {
   display: block;
   width: 100%;
   padding-left: 10px;
+  line-height: 25px;
 }
-.restaurant__text div i {
+.restaurant__text .like {
+  background-clip: text;
+}
+.restaurant__text .like i {
   text-align: right;
   padding-right: 20px;
   font-size: 1.6rem;
 }
-.restaurant__text div i:hover {
+.restaurant__text .like .fa-heart-full {
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: opacity 1.5s;
+  position: absolute;
+  right: 20px;
+}
+.restaurant__text .like:hover .fa-heart-full {
+  opacity: 1;
+}
+.restaurant__text .like:hover .fa-heart-empty {
+  opacity: 0;
+}
+
+.searchbar {
+  text-align: center;
+  background-color: #f6f6f6;
+  padding-bottom: 30px;
+  border-top: 2px solid #cecccc;
+}
+.searchbar__location {
+  background-color: #eaeaea;
+  line-height: 48px;
+  color: #4b4b4b;
+}
+.searchbar__location input {
+  margin-left: 10px;
+  width: 145px;
+}
+.searchbar__title {
+  width: 75%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+.searchbar__description {
+  width: 98%;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+@media (min-width: 1024px) {
+  .searchbar__description {
+    font-size: 1.2rem;
+  }
+}
+.searchbar__button {
+  margin: 25px;
+}
+
+.step {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px #cecccc;
+  height: 70px;
+  margin-left: 10px;
+}
+.step:hover {
+  background-color: #e4d5f6;
+}
+.step:hover .step__icon {
   color: #9356DC;
+}
+.step__number {
+  color: white;
   background-color: #9356DC;
+  font-size: 0.8rem;
+  margin-left: -15px;
+  border-radius: 100%;
+  padding-left: 9px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+}
+.step__icon {
+  width: 60px;
+  text-align: center;
+}
+.step__text {
+  font-weight: 500;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 27px;
+  padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .footer {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    border-radius: 25px;
+  }
+}
+.footer__logo {
+  font-family: "Shrikhand", cursive;
+  color: black;
+  color: #ffffff;
+  font-size: 1.3rem;
+  padding-bottom: 12px;
+}
+.footer a {
+  color: #ffffff;
+  width: 100%;
+  line-height: 1.6rem;
+}
+.footer i {
+  width: 20px;
+  text-align: center;
+  margin-right: 8px;
 }
 
 .header {
-  height: 66px;
+  height: 64px;
   padding-top: 24px;
   padding-bottom: 14px;
   display: flex;
@@ -273,12 +291,6 @@ small {
   }
 }
 
-@media (min-width: 375px) {
-  main {
-    width: 100%;
-    margin: auto;
-  }
-}
 @media (min-width: 768px) {
   main {
     width: 100%;
@@ -315,35 +327,34 @@ small {
   }
 }
 
-.footer {
-  background-color: #353535;
-  padding: 27px;
-  padding-bottom: 40px;
+.operation {
+  margin-top: 45px;
+  margin-bottom: 70px;
+  padding-left: 30px;
+  padding-right: 20px;
 }
-@media (min-width: 768px) {
-  .footer {
-    width: 95%;
+.operation h1 {
+  margin-bottom: 30px;
+}
+.operation > * {
+  margin-top: 25px;
+  margin-bottom: 25x;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding-top: 35px;
+}
+@media (min-width: 1024px) {
+  .restaurants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
     margin: auto;
-    text-align: center;
     border-radius: 25px;
   }
-}
-.footer__logo {
-  font-family: "Shrikhand", cursive;
-  color: #FFFFFF;
-  font-size: 1.3rem;
-  padding-bottom: 12px;
-}
-.footer__icon {
-  color: #FFFFFF;
-}
-.footer span {
-  color: #FFFFFF;
-}
-.footer a {
-  color: #FFFFFF;
-  width: 100%;
-  line-height: 1.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

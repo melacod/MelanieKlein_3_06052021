@@ -1,7 +1,9 @@
 @mixin font-texte {
     font-family: 'Roboto', sans-serif;
+    color: black;
 }
 
 @mixin font-titre {
     font-family: 'Shrikhand', cursive;
+    color: black;
 }
