@@ -1,17 +1,46 @@
 main
 {
-    @media (min-width: 667px) {
+    @media (min-width: 768px) {
        width: 60%;
        margin: auto;
     }
 
     @media (min-width: 1024px) {
-        width: 65%;
+        width: 100%;
         margin: auto;
+        display: flex;
+        flex-direction: grid;
+        justify-content: center;
+        align-items: center;
 
         .search
         {
-            height: 270px;
+            height: 350px;
+            padding: 0;
+            background-color: white;
+            border-top: none;
+            margin: 30px;
+            margin-top: 50px;
+
+            .searchbar > i
+            {
+                font-size: 1.6rem;
+                color: $color-primary;
+            }
+        }
+
+        .searchbar
+        {
+            background-color: white;
+           
+
+            input{
+                background-color: white;
+                border-bottom: solid 2px $color-primary;
+                margin-top: 25px;
+                font-size: 1.4rem;
+                width: 195px;
+            }
         }
      }
 }

@@ -25,6 +25,11 @@ h1 {
   padding-top: 38px;
   font-size: 1.55rem;
 }
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 1.65rem;
+  }
+}
 
 h2 {
   font-family: "Roboto", sans-serif;
@@ -54,6 +59,11 @@ small {
   font-size: 1.1rem;
   font-weight: 300;
 }
+@media (min-width: 1024px) {
+  .description {
+    font-size: 1.2rem;
+  }
+}
 
 .btn {
   background: radial-gradient(at 10% 90%, #9356DC, #FF79DA);
@@ -71,9 +81,15 @@ small {
   border: 1px solid #cecccc;
   width: 220px;
 }
+@media (min-width: 1024px) {
+  .btn {
+    width: 260px;
+    font-size: 1.1rem;
+  }
+}
 
 .search {
-  width: 100%;
+  width: 375px;
   text-align: center;
   background-color: #f6f6f6;
   padding-bottom: 20px;
@@ -105,6 +121,52 @@ small {
   color: #4b4b4b;
 }
 
+.operation {
+  width: 375px;
+}
+
+.step {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f6f6f6;
+  margin: 25px;
+  margin-top: 12px;
+  padding: 22px;
+  padding-right: 60px;
+  padding-left: 15px;
+  border-radius: 25px;
+  box-shadow: 1px 1px 25px #cecccc;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.step__number {
+  color: white;
+  background-color: #9356DC;
+  padding-left: 9px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  border-radius: 100%;
+  margin-left: -30px;
+  font-size: 1rem;
+}
+
+.step:hover, .step:checked {
+  background-color: #e4d5f6;
+}
+
+.fi {
+  color: #9356DC;
+  width: 30px;
+  text-align: center;
+}
+
+.step > input {
+  display: none;
+}
+
 .header {
   height: 66px;
   padding-top: 24px;
@@ -129,7 +191,7 @@ small {
   }
 }
 
-@media (min-width: 667px) {
+@media (min-width: 768px) {
   main {
     width: 60%;
     margin: auto;
@@ -137,11 +199,34 @@ small {
 }
 @media (min-width: 1024px) {
   main {
-    width: 65%;
+    width: 100%;
     margin: auto;
+    display: flex;
+    flex-direction: grid;
+    justify-content: center;
+    align-items: center;
   }
   main .search {
-    height: 270px;
+    height: 350px;
+    padding: 0;
+    background-color: white;
+    border-top: none;
+    margin: 30px;
+    margin-top: 50px;
+  }
+  main .search .searchbar > i {
+    font-size: 1.6rem;
+    color: #9356DC;
+  }
+  main .searchbar {
+    background-color: white;
+  }
+  main .searchbar input {
+    background-color: white;
+    border-bottom: solid 2px #9356DC;
+    margin-top: 25px;
+    font-size: 1.4rem;
+    width: 195px;
   }
 }
 
