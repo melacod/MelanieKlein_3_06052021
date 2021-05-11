@@ -1,0 +1,14 @@
+.btn
+{
+    background: radial-gradient(at 10% 90%,$color-primary, $color-secondary);
+    opacity: 1;
+    color: white;
+    border: $color-secondary solid 0.1px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 15px;
+    margin: 25px;
+    font-weight: 700;
+    @include font-texte();
+    font-size:1.1rem;
+}

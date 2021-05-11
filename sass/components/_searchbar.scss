@@ -1,0 +1,25 @@
+.search {
+    width: 100%;
+    text-align: center;
+    background-color: #f6f6f6;
+    padding-bottom: 20px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.searchbar {
+    background-color: #eaeaea;
+    padding: 10px;
+
+    input {
+        border: none;
+        background-color: #eaeaea;
+        font-weight: 600;
+        font-size: 1.1rem;
+        @include font-texte();
+        margin-left: 10px;
+        width: 145px;
+    }
+}
+

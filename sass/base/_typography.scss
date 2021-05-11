@@ -1,0 +1,44 @@
+body
+{
+    @include font-texte(); 
+}
+
+h1
+{
+    @include font-texte();
+    padding: 20px;
+    font-size: 1.9rem;
+}
+
+h2
+{
+    @include font-texte();
+    padding-top: 30px;
+    padding: 20px;
+}
+
+strong
+{
+    @include font-texte();
+    text-align: left;
+    padding: 10px;
+    width: 70%;
+    color: black;
+}
+
+small
+{
+    @include font-texte();
+    text-align: left;
+    width: 85%;
+    padding: 10px;
+    padding-bottom: 30px;
+    color: black;
+}
+
+.description
+{
+    width: 98%;
+    font-size: 1.2rem;;
+    font-weight: 300;
+}

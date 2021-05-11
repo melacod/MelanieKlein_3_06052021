@@ -7,8 +7,7 @@
     justify-content: space-around;
     align-items: center;
 
-
-   &__back {
+    &__back {
         &--hidden {
             visibility: hidden;
         }
@@ -17,14 +16,11 @@
     &::after {
         content: "";
     }
-    
-}
 
-@media (min-width: 1024px ) {
-    .header{
+    @media (min-width: 1024px) {
         height: 66px;
         padding-top: 24px;
         width: 40%;
-           
     }
+
 }
