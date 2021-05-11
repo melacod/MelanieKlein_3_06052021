@@ -21,8 +21,9 @@ body {
 
 h1 {
   font-family: "Roboto", sans-serif;
-  padding: 20px;
-  font-size: 1.9rem;
+  padding: 12px;
+  padding-top: 38px;
+  font-size: 1.55rem;
 }
 
 h2 {
@@ -50,7 +51,7 @@ small {
 
 .description {
   width: 98%;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 300;
 }
 
@@ -61,12 +62,14 @@ small {
   border: #FF79DA solid 0.1px;
   border-radius: 25px;
   text-align: center;
-  padding: 15px;
+  padding: 14px;
   margin: 25px;
-  font-weight: 700;
+  font-weight: 400;
   font-family: "Roboto", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   box-shadow: 0px 5px 10px 1px #cecccc;
+  border: 1px solid #cecccc;
+  width: 60%;
 }
 
 .search {
@@ -77,20 +80,29 @@ small {
   padding-top: 0;
   padding-left: 0;
   padding-right: 0;
+  height: 338px;
+  border-top: 2px solid #cecccc;
+}
+.search h1 {
+  width: 75%;
+  margin: auto;
 }
 
 .searchbar {
   background-color: #eaeaea;
   padding: 10px;
+  height: 50px;
 }
 .searchbar input {
   border: none;
   background-color: #eaeaea;
-  font-weight: 600;
-  font-size: 1.1rem;
+  font-weight: 500;
+  font-size: 1rem;
   font-family: "Roboto", sans-serif;
+  padding-top: 5px;
   margin-left: 10px;
   width: 145px;
+  color: #4b4b4b;
 }
 
 .header {

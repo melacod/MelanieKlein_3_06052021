@@ -6,8 +6,10 @@ body
 h1
 {
     @include font-texte();
-    padding: 20px;
-    font-size: 1.9rem;
+    padding: 12px;
+    padding-top: 38px;
+    font-size: 1.55rem;
+    
 }
 
 h2
@@ -39,6 +41,6 @@ small
 .description
 {
     width: 98%;
-    font-size: 1.2rem;;
+    font-size: 1.1rem;;
     font-weight: 300;
 }

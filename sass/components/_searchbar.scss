@@ -6,20 +6,31 @@
     padding-top: 0;
     padding-left: 0;
     padding-right: 0;
+    height: 338px;
+    border-top: 2px solid rgb(206, 204, 204);
+
+    h1 {
+        width: 75%;
+        margin: auto;
+    }
+    
 }
 
 .searchbar {
     background-color: #eaeaea;
     padding: 10px;
+    height: 50px;
 
     input {
         border: none;
         background-color: #eaeaea;
-        font-weight: 600;
-        font-size: 1.1rem;
+        font-weight: 500;
+        font-size: 1rem;
         @include font-texte();
+        padding-top: 5px;
         margin-left: 10px;
         width: 145px;
+        color: #4b4b4b;
     }
 }
 
