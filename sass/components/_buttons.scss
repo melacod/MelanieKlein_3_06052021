@@ -10,7 +10,7 @@
   box-shadow: 0px 5px 10px 1px rgb(206, 204, 204);
   border: 1px solid rgb(206, 204, 204);
   
-  @media (min-width: 1024px) {
+  @include screen-min (desktop) {
     font-size: 1.1rem;
   }
 }

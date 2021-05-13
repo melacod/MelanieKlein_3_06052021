@@ -9,7 +9,7 @@ h1 {
   @include font-texte();
   font-size: 1.55rem;
 
-  @media (min-width: 1024px) {
+  @include screen-min (desktop) {
     font-size: 1.65rem;
   }
 }

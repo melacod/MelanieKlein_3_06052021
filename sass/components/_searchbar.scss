@@ -9,9 +9,20 @@
     line-height: 48px;
     color: #4b4b4b;
 
+    @include screen-min(tablet) {
+      background-color: white;
+    }
+
     input {
       margin-left: 10px;
       width: 145px;
+
+      @include screen-min(tablet) {
+        font-size: 1.2rem;
+		    width: 195px;
+		    border-bottom: solid 2px $color-primary;
+      }
+
     }
   }
 
@@ -27,7 +38,7 @@
     font-size: 1.1rem;
     font-weight: 300;
 
-    @media (min-width: 1024px) {
+    @include screen-min (desktop) {
       font-size: 1.2rem;
     }
   }
@@ -35,4 +46,17 @@
   &__button {
     margin: 25px;
   }
+
+  @include screen-min(tablet) {
+      width: 45%;
+      margin: 0;
+      padding-bottom: 0;
+      background-color: white;
+      border: none;
+  }
+
+  @include screen-min(large) {
+      width: 30%;
+  }
+
 }

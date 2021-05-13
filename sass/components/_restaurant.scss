@@ -8,9 +8,9 @@
   box-shadow: 1px 1px 15px rgb(206, 204, 204);
   margin: 0 20px 20px 20px;
 
-  @media (min-width: 768px) {
-    width: 70%;
-    margin: auto;
+  @include screen-min (tablet) {
+    margin: 0;
+    margin-bottom: 25px;
   }
 
   &__image {

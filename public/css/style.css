@@ -32,7 +32,7 @@ h1 {
   color: black;
   font-size: 1.55rem;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   h1 {
     font-size: 1.65rem;
   }
@@ -67,7 +67,7 @@ input {
   font-family: "Roboto", sans-serif;
   color: black;
   color: white;
-  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  background: linear-gradient(to top left, #9356dc, #ff79da);
   border-radius: 25px;
   text-align: center;
   padding: 14px 21px 14px 21px;
@@ -76,7 +76,7 @@ input {
   box-shadow: 0px 5px 10px 1px #cecccc;
   border: 1px solid #cecccc;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .button {
     font-size: 1.1rem;
   }
@@ -92,10 +92,10 @@ input {
   box-shadow: 1px 1px 15px #cecccc;
   margin: 0 20px 20px 20px;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .restaurant {
-    width: 70%;
-    margin: auto;
+    margin: 0;
+    margin-bottom: 25px;
   }
 }
 .restaurant__image {
@@ -150,7 +150,7 @@ input {
   font-size: 1.6rem;
 }
 .restaurant__text .like .fa-heart-full {
-  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  background: linear-gradient(to top left, #9356dc, #ff79da);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
@@ -176,9 +176,21 @@ input {
   line-height: 48px;
   color: #4b4b4b;
 }
+@media screen and (min-width: 768px) {
+  .searchbar__location {
+    background-color: white;
+  }
+}
 .searchbar__location input {
   margin-left: 10px;
   width: 145px;
+}
+@media screen and (min-width: 768px) {
+  .searchbar__location input {
+    font-size: 1.2rem;
+    width: 195px;
+    border-bottom: solid 2px #9356dc;
+  }
 }
 .searchbar__title {
   width: 75%;
@@ -191,13 +203,27 @@ input {
   font-size: 1.1rem;
   font-weight: 300;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .searchbar__description {
     font-size: 1.2rem;
   }
 }
 .searchbar__button {
   margin: 25px;
+}
+@media screen and (min-width: 768px) {
+  .searchbar {
+    width: 45%;
+    margin: 0;
+    padding-bottom: 0;
+    background-color: white;
+    border: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .searchbar {
+    width: 30%;
+  }
 }
 
 .step {
@@ -209,17 +235,18 @@ input {
   border-radius: 20px;
   box-shadow: 1px 1px 15px #cecccc;
   height: 70px;
+  width: 100%;
   margin-left: 10px;
 }
 .step:hover {
   background-color: #e4d5f6;
 }
 .step:hover .step__icon {
-  color: #9356DC;
+  color: #9356dc;
 }
 .step__number {
   color: white;
-  background-color: #9356DC;
+  background-color: #9356dc;
   font-size: 0.8rem;
   margin-left: -15px;
   border-radius: 100%;
@@ -241,14 +268,6 @@ input {
   padding: 27px;
   padding-bottom: 40px;
 }
-@media (min-width: 768px) {
-  .footer {
-    width: 95%;
-    margin: auto;
-    text-align: center;
-    border-radius: 25px;
-  }
-}
 .footer__logo {
   font-family: "Shrikhand", cursive;
   color: black;
@@ -256,15 +275,25 @@ input {
   font-size: 1.3rem;
   padding-bottom: 12px;
 }
-.footer a {
+.footer__links a {
   color: #ffffff;
   width: 100%;
   line-height: 1.6rem;
 }
-.footer i {
+.footer__links i {
   width: 20px;
   text-align: center;
   margin-right: 8px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-left: 5%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-left: 20%;
+  }
 }
 
 .header {
@@ -283,7 +312,7 @@ input {
 .header::after {
   content: "";
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .header {
     height: 66px;
     padding-top: 24px;
@@ -291,39 +320,17 @@ input {
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   main {
     width: 100%;
     margin: auto;
     display: flex;
-    flex-direction: grid;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-  }
-  main .search {
-    height: 350px;
-    padding: 0;
-    background-color: white;
-    border-top: none;
-    margin: 30px;
-    margin-top: 50px;
-  }
-  main .search .searchbar > i {
-    font-size: 1.6rem;
-    color: #9356DC;
-  }
-  main .searchbar {
-    background-color: white;
-  }
-  main .searchbar input {
-    background-color: white;
-    border-bottom: solid 2px #9356DC;
-    margin-top: 25px;
-    font-size: 1.4rem;
-    width: 195px;
-  }
-  main .restaurants {
-    width: 100%;
+    align-items: stretch;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
 }
 
@@ -331,7 +338,7 @@ input {
   margin-top: 45px;
   margin-bottom: 70px;
   padding-left: 30px;
-  padding-right: 20px;
+  padding-right: 30px;
 }
 .operation h1 {
   margin-bottom: 30px;
@@ -340,20 +347,50 @@ input {
   margin-top: 25px;
   margin-bottom: 25x;
 }
+@media screen and (min-width: 768px) {
+  .operation {
+    width: 45%;
+    margin: 0;
+  }
+  .operation > h1 {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .operation {
+    width: 30%;
+  }
+}
 
 .restaurants {
   background-color: #f6f6f6;
   padding-top: 35px;
+  padding-bottom: 20px;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .restaurants {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     width: 90%;
     margin: auto;
     border-radius: 25px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
+  .restaurants h2 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .restaurants a {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .restaurants {
+    width: 60%;
   }
 }
 
