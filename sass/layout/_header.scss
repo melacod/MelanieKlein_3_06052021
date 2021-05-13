@@ -18,7 +18,7 @@
         content: "";
     }
 
-    @media (min-width: 1024px) {
+    @include screen-min (large) {
         height: 66px;
         padding-top: 24px;
         width: 100%;

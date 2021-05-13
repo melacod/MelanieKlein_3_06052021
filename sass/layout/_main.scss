@@ -1,42 +1,14 @@
 main {
     
-    @media (min-width: 768px) {
+    @include screen-min(tablet) {
         width: 100%;
         margin: auto;
         display: flex;
-        flex-direction: grid;
+        flex-direction: row;
         justify-content: center;
-        align-items: center;
-
-        .search {
-            height: 350px;
-            padding: 0;
-            background-color: white;
-            border-top: none;
-            margin: 30px;
-            margin-top: 50px;
-
-            .searchbar>i {
-                font-size: 1.6rem;
-                color: $color-primary;
-            }
-        }
-
-        .searchbar {
-            background-color: white;
-
-
-            input {
-                background-color: white;
-                border-bottom: solid 2px $color-primary;
-                margin-top: 25px;
-                font-size: 1.4rem;
-                width: 195px;
-            }
-        }
-
-        .restaurants {
-            width: 100%;
-        }
+        align-items: stretch;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
     }
 }

@@ -4,7 +4,7 @@
     margin-bottom: 70px;
 
     padding-left: 30px;
-    padding-right: 20px;
+    padding-right: 30px;
 
     h1 {
         margin-bottom: 30px;
@@ -13,5 +13,17 @@
     > * {
         margin-top: 25px;
         margin-bottom: 25x;
+    }
+
+    @include screen-min(tablet) {
+        width: 45%;
+        margin: 0;
+        > h1 {
+            margin-top: 10px;
+        }
+    }
+
+    @include screen-min(large) {
+        width: 30%;
     }
 }

@@ -3,13 +3,6 @@
   padding: 27px;
   padding-bottom: 40px;
 
-  @media (min-width: 768px) {
-    width: 95%;
-    margin: auto;
-    text-align: center;
-    border-radius: 25px;
-  }
-
   &__logo {
     @include font-titre();
     color: #ffffff;
@@ -17,15 +10,26 @@
     padding-bottom: 12px;
   }
 
-  a {
-    color: #ffffff;
-    width: 100%;
-    line-height: 1.6rem;
+  &__links {
+    a {
+      color: #ffffff;
+      width: 100%;
+      line-height: 1.6rem;
+    }
+  
+    i {
+      width: 20px;
+      text-align: center;
+      margin-right: 8px;
+    }
+  }
+  
+  @include screen-min (tablet) {
+    padding-left: 5%;
   }
 
-  i {
-    width: 20px;
-    text-align: center;
-    margin-right: 8px;
+  @include screen-min (large) {
+    padding-left: 20%;
   }
+
 }
