@@ -1,0 +1,17 @@
+.smooth_appear {
+    @for $i from 1 through 4 {
+        &__#{$i} {
+            @include smoothAppearProperties($i);
+        }
+    }
+}
+
+@keyframes smoothAppear {
+    0% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
