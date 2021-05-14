@@ -4,10 +4,12 @@
   padding-bottom: 40px;
 
   &__logo {
-    @include font-titre();
-    color: #ffffff;
-    font-size: 1.3rem;
-    padding-bottom: 12px;
+    a {
+      @include font-titre();
+      color: #ffffff;
+      font-size: 1.3rem;
+      padding-bottom: 12px;
+    }
   }
 
   &__links {
@@ -17,14 +19,26 @@
       line-height: 1.6rem;
     }
 
+    &--primary:hover {
+      color: $color-primary;
+    }
+
+    &--secondary:hover {
+      color: $color-secondary;
+    }
+
+    &--tertiary:hover {
+      color: $color-tertiary;
+    }
+
     i {
       width: 20px;
       text-align: center;
       margin-right: 8px;
     }
-    
+
   }
-  
+
   @include screen-min (tablet) {
     padding-left: 15%;
   }

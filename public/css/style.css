@@ -100,6 +100,7 @@ input {
 }
 
 .button {
+  cursor: pointer;
   font-family: "Roboto", sans-serif;
   color: black;
   color: white;
@@ -323,6 +324,7 @@ input {
 }
 
 .step {
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -364,7 +366,7 @@ input {
   padding: 27px;
   padding-bottom: 40px;
 }
-.footer__logo {
+.footer__logo a {
   font-family: "Shrikhand", cursive;
   color: black;
   color: #ffffff;
@@ -375,6 +377,15 @@ input {
   color: #ffffff;
   width: 100%;
   line-height: 1.6rem;
+}
+.footer__links--primary:hover {
+  color: #9356dc;
+}
+.footer__links--secondary:hover {
+  color: #ff79da;
+}
+.footer__links--tertiary:hover {
+  color: #99e2d0;
 }
 .footer__links i {
   width: 20px;
