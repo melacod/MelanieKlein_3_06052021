@@ -1,0 +1,29 @@
+.plat
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6F6F6;
+    border: #F4F4F4 1px solid;
+    border-radius: 15px;
+    margin-top: 12px;
+    box-shadow: 1px 1px 15px rgb(206, 204, 204);
+    padding: 13px;
+    height: 70px;
+    width: 345px;
+
+    @include screen-min (tablet){
+    width: 70%;}
+
+    strong {
+    
+        width: 100%;
+    }
+    
+    small{
+    
+        width: 50%;
+    }
+}

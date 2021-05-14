@@ -2,12 +2,13 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";
+@import "./utils/animation";
 
 @import "./base/base";
 @import "./base/typography";
 
 @import "./components/buttons";
-@import "./components/presentation";
+@import "./components/plat";
 @import "./components/restaurant";
 @import "./components/searchbar";
 @import "./components/step";
@@ -18,4 +19,5 @@
 @import "./layout/main";
 @import "./layout/nav";
 @import "./layout/operation";
+@import "./layout/presentation";
 @import "./layout/restaurants";

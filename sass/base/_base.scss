@@ -19,3 +19,9 @@ input {
   border: none;
   background-color: inherit;
 }
+
+small{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap
+}
