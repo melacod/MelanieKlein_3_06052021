@@ -1,4 +1,5 @@
 .button {
+  @include pointer();
   @include font-texte();
   color: white;
   background: linear-gradient(to top left, $color-primary, $color-secondary);
