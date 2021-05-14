@@ -22,3 +22,9 @@ $breakpoints: (
     min: 1200px,
   ),
 );
+
+// animations
+
+$smooth-appear-duration: 1100ms;
+$smooth-appear-delay: 100ms;
+$smooth-appear-delay-offset: 200ms;

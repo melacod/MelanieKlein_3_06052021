@@ -8,6 +8,13 @@
     color: black;
 }
 
+// Mixin pour les propriétés de l'animation smooth appear
+@mixin smoothAppearProperties ($i, $duration: $smooth-appear-duration, $delay: $smooth-appear-delay, $delay-offset: $smooth-appear-delay-offset) {
+    opacity: 0;
+    animation: smoothAppear $duration ease-in-out forwards 1;
+    animation-delay: $delay + ( ($i - 1) * $delay-offset);
+}
+
 // Applique la media query pour le breakpoint demandé
 // Paramètres
 //   breakpoint = nom du breakpoint dans la map des breakpoints
