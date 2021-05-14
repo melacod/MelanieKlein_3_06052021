@@ -1,5 +1,5 @@
-.plat
-{
+.plat {
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -12,18 +12,12 @@
     box-shadow: 1px 1px 15px rgb(206, 204, 204);
     padding: 13px;
     height: 70px;
-    width: 345px;
-
-    @include screen-min (tablet){
-    width: 70%;}
 
     strong {
-    
         width: 100%;
     }
-    
-    small{
-    
-        width: 50%;
+
+    small {
+        width: 90%;
     }
 }

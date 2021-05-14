@@ -1,0 +1,38 @@
+.plats {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    
+    @include screen-min (large) {
+        width: 30%;
+    }
+
+    &__title {
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 15px;
+        font-weight: 400;
+        font-size: 1rem;
+        position: relative;
+        padding-bottom: 0.35rem;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 2.5rem;
+            height: 0.25rem;
+            background-color: #99e2d0;
+
+        }
+    }
+
+    &__list {
+        width: 100%;
+    }
+
+}
+
