@@ -125,6 +125,81 @@ input {
   font-weight: 450;
 }
 
+.heart {
+  display: block;
+  height: 70px;
+  width: 70px;
+}
+
+.heart .heart--empty {
+  display: block;
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  left: -1px;
+  top: -4px;
+  overflow: hidden;
+  z-index: 3;
+  transition: height 750ms ease-in-out;
+}
+
+.heart .heart--empty:before, .heart .heart--empty:after {
+  content: "";
+  background: white;
+  border-radius: 85px 60px 0 0;
+  height: 59px;
+  width: 36px;
+  position: absolute;
+  left: 37px;
+  top: 6px;
+  border-radius: 85px 60px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heart .heart--empty:after {
+  left: 1px;
+  border-radius: 45px 60px 0 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.heart .heart--full {
+  position: relative;
+  margin-left: 8px;
+}
+
+.heart .heart--full:before {
+  background: linear-gradient(to top right, #9356dc, #ff79da);
+}
+
+.heart .heart--full:after {
+  background: linear-gradient(to top left, #9356dc, #ff79da);
+}
+
+.heart .heart--full:before, .heart .heart--full:after {
+  content: "";
+  border-radius: 85px 60px 0 0;
+  width: 39px;
+  height: 62px;
+  position: absolute;
+  left: 28px;
+  top: 1px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heart .heart--full:after {
+  left: -11px;
+  border-radius: 45px 60px 0 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.heart:hover .heart--empty {
+  height: 0px;
+}
+
 .menu {
   background-color: #F6F6F6;
   border-radius: 50px 50px 0 0;
@@ -134,19 +209,30 @@ input {
   padding-left: 15px;
 }
 .menu__title {
+  font-family: "Shrikhand", cursive;
+  color: black;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-left: 10px;
-  padding-right: 30px;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   font-weight: 500;
-  font-family: "Shrikhand", cursive;
-  color: black;
 }
-.menu__title i {
-  font-size: 1.7rem;
-  margin-top: 5px;
+@media screen and (min-width: 768px) {
+  .menu__title {
+    font-size: 1.7rem;
+    padding-right: 10px;
+  }
+}
+.menu__title .heart {
+  transform: scale(0.4);
+  height: 10px;
+}
+@media screen and (min-width: 768px) {
+  .menu__title .heart {
+    transform: scale(0.5);
+    height: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .menu__content {
@@ -239,28 +325,8 @@ input {
   padding-left: 10px;
   line-height: 25px;
 }
-.restaurant__text .like {
-  background-clip: text;
-}
-.restaurant__text .like i {
-  text-align: right;
-  padding-right: 20px;
-  font-size: 1.6rem;
-}
-.restaurant__text .like .fa-heart-full {
-  background: linear-gradient(to top left, #9356dc, #ff79da);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
-  transition: opacity 1.5s;
-  position: absolute;
-  right: 20px;
-}
-.restaurant__text .like:hover .fa-heart-full {
-  opacity: 1;
-}
-.restaurant__text .like:hover .fa-heart-empty {
-  opacity: 0;
+.restaurant__text .heart {
+  transform: scale(0.4);
 }
 
 .searchbar {

@@ -60,34 +60,11 @@
         line-height: 25px;
       }
     }
-    .like {
-        background-clip: text;
-      i {
-        text-align: right;
-        padding-right: 20px;
-        font-size: 1.6rem;
-      }
 
-      .fa-heart-full {
-        background: linear-gradient(to top left, $color-primary, $color-secondary);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        opacity: 0;
-        transition: opacity 1.5s;
-        position: absolute;
-        right: 20px;
-      }
-
-      &:hover {
-        .fa-heart-full {
-            opacity: 1;
-        }
-        .fa-heart-empty {
-            opacity: 0;
-        }
-      }
-
+    .heart {
+      transform: scale(0.4);
     }
+    
   }
 }
 

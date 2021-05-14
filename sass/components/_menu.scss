@@ -7,18 +7,27 @@
     padding-left: 15px;
 
     &__title {
+        @include font-titre;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding-left: 10px;
-        padding-right: 30px;
-        font-size: 1.9rem;
+        
+        font-size: 1.5rem;
         font-weight: 500;
-        @include font-titre;
-
-        i {
+        
+        @include screen-min (tablet) {
             font-size: 1.7rem;
-            margin-top: 5px;
+            padding-right: 10px;
+        }
+
+        .heart {
+            transform: scale(0.4);
+            height: 10px;
+            @include screen-min (tablet) {
+                transform: scale(0.5);
+                height: 30px;
+            }
         }
     }
 
