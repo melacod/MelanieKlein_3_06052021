@@ -158,6 +158,7 @@ input {
 }
 
 .plat {
+  cursor: pointer;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -348,9 +349,9 @@ input {
   font-size: 0.8rem;
   margin-left: -15px;
   border-radius: 100%;
-  padding-left: 9px;
-  padding-right: 10px;
-  padding-top: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
   padding-bottom: 4px;
 }
 .step__icon {
@@ -466,6 +467,7 @@ input {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-content: flex-start;
   padding-top: 20px;
 }
 @media screen and (min-width: 1200px) {
