@@ -16,20 +16,21 @@
       width: 100%;
       line-height: 1.6rem;
     }
-  
+
     i {
       width: 20px;
       text-align: center;
       margin-right: 8px;
     }
+    
   }
   
   @include screen-min (tablet) {
-    padding-left: 5%;
+    padding-left: 15%;
   }
 
   @include screen-min (large) {
-    padding-left: 20%;
+    padding-left: 10%;
   }
 
 }

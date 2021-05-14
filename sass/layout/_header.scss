@@ -18,6 +18,11 @@
         content: "";
     }
 
+    @include screen-min (tablet) {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
     @include screen-min (large) {
         height: 66px;
         padding-top: 24px;
