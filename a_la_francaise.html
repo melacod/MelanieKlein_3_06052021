@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
+
 <head>
 
     <meta charset="utf-8">
@@ -13,8 +14,10 @@
 
     <!-- Import des font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
     <!-- Une feuille de style général et une feuille par support: desktop / tablet / mobile -->
     <link rel="stylesheet" type="text/css" href="public/css/style.css" />
@@ -23,137 +26,151 @@
 
 <body>
 
-<header class="header">
+    <header class="header">
 
-    <nav class="header__back">
-        <a href="index.html">
-            <i class="fas fa-arrow-left fa-2x"></i>
-        </a>
-    </nav>
+        <nav class="header__back">
+            <a href="index.html">
+                <i class="fas fa-arrow-left fa-2x"></i>
+            </a>
+        </nav>
 
-    <div class="header__logo">
-        <img src="/public/img/logo/ohmyfood.svg" alt="logo ohmyfood">
-    </div>
-
-</header>
-
-<main class="presentation">
-
-    <div class="presentation__image">
-        <img src="public/img/restaurants/a_la_francaise.jpg" alt="a_la_francaise"/>
-    </div>
-
-    <div class="menu">
-        <div class="menu__title">
-            <span>À la française</span>
-            <i class="menu__icon far fa-heart fa-heart-empty fa-x"></i>
+        <div class="header__logo">
+            <img src="/public/img/logo/ohmyfood.svg" alt="logo ohmyfood">
         </div>
-        <div class="plats">
-            <h3 class="plats__title">ENTRÉES</h3>
-            <a>
-                <div class="plat smooth_appear__1">
-                    <strong>Ravioles de foie gras</strong>
-                    <small>Accompagnés de leur crème à la truffe</small>
-                    <div class="plat__price"><strong>25€</strong></div>
-                </div>
-            </a>
-            <a>
-                <div class="plat smooth_appear__2">
-                    <strong>Velouté de légumes d'antan</strong>
-                    <small>Carotte, panais, topinambour</small>
-                    <div class="plat__price"><strong>35€</strong></div>
-                </div>
-            </a>
-            <a> 
-                <div class="plat smooth_appear__3">
-                    <strong>Soupe à l'oignon</strong>
-                    <small>Revisitée</small>
-                    <div class="plat__price"><strong>20€</strong></div>
-                </div>
-            </a>
-            <h3 class="plats__title">PLATS</h3>
-            <a>
-                <div class="plat smooth_appear__1">
-                    <strong>Coquilles Saint-Jacques</strong>
-                    <small>Accompagnés d'une purée de panais</small>
-                    <div class="plat__price"><strong>40€</strong></div>
-                </div>
-            </a>
-            <a>
-                <div class="plat smooth_appear__2">
-                    <strong>Magret de canard</strong>
-                    <small>Et parmentier de pommes de terres</small>
-                    <div class="plat__price"><strong>35€</strong></div>
-                </div>
-            </a>
-            <a>
-                <div class="plat smooth_appear__3">
-                    <strong>Pigonneau d'Ille-et-Vilaine</strong>
-                    <small>Sur son lit de gnocchis aux légumes</small>
-                    <div class="plat__price"><strong>40€</strong></div>
-                </div>
-            </a>
-            <h3 class="plats__title">DESSERTS</h3>
-            <a>
-                <div class="plat smooth_appear__1">
-                    <strong>Pétales de violettes glacés</strong>
-                    <small>Et purée de noisettes</small>
-                    <div class="plat__price"><strong>18€</strong></div>
-                </div>
-            </a>
-            <a>
-                <div class="plat smooth_appear__2">
-                    <strong>Fondant au chocolat</strong>
-                    <small>Revisité</small>
-                    <div class="plat__price"><strong>22€</strong></div>
-                </div>
-            </a>
-            <a>
-                <div class="plat smooth_appear__3">
-                    <strong>Millefeuille croustillant</strong>
-                    <small>Myrtilles et pâte d'amande</small>
-                    <div class="plat__price"><strong>23€</strong></div>
-                </div>
-            </a>
+
+    </header>
+
+    <main class="presentation">
+
+        <div class="presentation__image">
+            <img src="public/img/restaurants/a_la_francaise.jpg" alt="a_la_francaise" />
         </div>
-    </div>
 
-    <div class="presentation__button">
-    <button class="button button--wide">Commander</button>
-    </div>
-
-</main>
-
-
-
-<footer class="footer">
-
-    <div class="footer__logo">
-        ohmyfood
-    </div>
-
-    <nav class="footer__links">
-        <div>
-            <a href="proposer_un_restaurant.html">
-                <i class="fas fa-utensils footer__icon"></i>
-                Proposer un restaurant
-            </a>
+        <div class="presentation__content">
+            <div class="menu">
+                <div class="menu__title">
+                    <span>À la française</span>
+                    <i class="far fa-heart fa-heart-empty fa-x"></i>
+                </div>
+                <div class="menu__content">
+                    <div class="plats">
+                        <h3 class="plats__title">ENTRÉES</h3>
+                        <div class="plats__list">
+                            <a>
+                                <div class="plat smooth_appear__1">
+                                    <strong>Ravioles de foie gras</strong>
+                                    <small>Accompagnés de leur crème à la truffe</small>
+                                    <div class="plat__price"><strong>25€</strong></div>
+                                </div>
+                            </a>
+                            <a>
+                                <div class="plat smooth_appear__2">
+                                    <strong>Velouté de légumes d'antan</strong>
+                                    <small>Carotte, panais, topinambour</small>
+                                    <div class="plat__price"><strong>35€</strong></div>
+                                </div>
+                            </a>
+                            <a>
+                                <div class="plat smooth_appear__3">
+                                    <strong>Soupe à l'oignon</strong>
+                                    <small>Revisitée</small>
+                                    <div class="plat__price"><strong>20€</strong></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="plats">
+                        <h3 class="plats__title">PLATS</h3>
+                        <div class="plats__list">
+                            <a>
+                                <div class="plat smooth_appear__1">
+                                    <strong>Coquilles Saint-Jacques</strong>
+                                    <small>Accompagnés d'une purée de panais</small>
+                                    <div class="plat__price"><strong>40€</strong></div>
+                                </div>
+                            </a>
+                            <a>
+                                <div class="plat smooth_appear__2">
+                                    <strong>Magret de canard</strong>
+                                    <small>Et parmentier de pommes de terres</small>
+                                    <div class="plat__price"><strong>35€</strong></div>
+                                </div>
+                            </a>
+                            <a>
+                                <div class="plat smooth_appear__3">
+                                    <strong>Pigonneau d'Ille-et-Vilaine</strong>
+                                    <small>Sur son lit de gnocchis aux légumes</small>
+                                    <div class="plat__price"><strong>40€</strong></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="plats">
+                        <h3 class="plats__title">DESSERTS</h3>
+                        <div class="plats__list">
+                            <a>
+                                <div class="plat smooth_appear__1">
+                                    <strong>Pétales de violettes glacés</strong>
+                                    <small>Et purée de noisettes</small>
+                                    <div class="plat__price"><strong>18€</strong></div>
+                                </div>
+                            </a>
+                            <a>
+                                <div class="plat smooth_appear__2">
+                                    <strong>Fondant au chocolat</strong>
+                                    <small>Revisité</small>
+                                    <div class="plat__price"><strong>22€</strong></div>
+                                </div>
+                            </a>
+                            <a>
+                                <div class="plat smooth_appear__3">
+                                    <strong>Millefeuille croustillant</strong>
+                                    <small>Myrtilles et pâte d'amande</small>
+                                    <div class="plat__price"><strong>23€</strong></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <a href="devenir_partenaire.html">
-                <i class="fa-hands-helping fas footer__icon"></i>
-                Devenir partenaire
-            </a>
-        </div>
-        <div>
-            <a href="mentions_legales.html">Mentions légales</a>
-        </div>
-        <div>
-            <a href="contact.html">Contact</a>
-        </div>
-    </nav>
 
-</footer>
+        <div class="presentation__button">
+            <button class="button button--wide">Commander</button>
+        </div>
+
+    </main>
+
+
+
+    <footer class="footer">
+
+        <div class="footer__logo">
+            ohmyfood
+        </div>
+
+        <nav class="footer__links">
+            <div>
+                <a href="proposer_un_restaurant.html">
+                    <i class="fas fa-utensils footer__icon"></i>
+                    Proposer un restaurant
+                </a>
+            </div>
+            <div>
+                <a href="devenir_partenaire.html">
+                    <i class="fa-hands-helping fas footer__icon"></i>
+                    Devenir partenaire
+                </a>
+            </div>
+            <div>
+                <a href="mentions_legales.html">Mentions légales</a>
+            </div>
+            <div>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+
+    </footer>
 
 </body>
 
