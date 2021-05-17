@@ -10,8 +10,112 @@
     0% {
         transform: translateY(20px);
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(white, 0.95);
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    z-index: 50;
+}
+
+.loader--inner {
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+    width: 100%;
+    color: $color-primary;
+    padding: 0 100px;
+    text-align: center;
+}
+
+.loader--inner label {
+    font-size: 20px;
+    opacity: 0;
+    display: inline-block;
+}
+
+@keyframes lol {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+
+    33% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    66% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+}
+
+$loader-duration: 3s;
+$loader-offset: 150ms;
+
+@keyframes disappear {
+    0% {
+        opacity: 0.8;
+    }
+
+    33% {
+        opacity: 0.6;
+    }
+   
+    99% {
+        opacity: 0.4;
+    
+    }
+    100% {
+        z-index: -100;
+    }
+}
+
+.loader--inner label:nth-child(6) {
+    animation: lol $loader-duration ease-in-out forwards;
+}
+
+.loader--inner label:nth-child(5) {
+    animation: lol $loader-duration 1 * $loader-offset ease-in-out forwards;
+    color: $color-secondary;
+}
+
+.loader--inner label:nth-child(4) {
+    animation: lol $loader-duration 2 * $loader-offset ease-in-out forwards;
+}
+
+.loader--inner label:nth-child(3) {
+    animation: lol $loader-duration 3 * $loader-offset ease-in-out forwards;
+    color: $color-secondary;
+}
+
+.loader--inner label:nth-child(2) {
+    animation: lol $loader-duration 4 * $loader-offset ease-in-out forwards;
+}
+
+.loader--inner label:nth-child(1) {
+    animation: lol $loader-duration 5 * $loader-offset ease-in-out forwards;
+    color: $color-secondary;
+}
+
+.loader {
+    animation: disappear $loader-duration * 3 ease-in-out forwards;
 }
