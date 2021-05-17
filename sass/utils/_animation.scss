@@ -42,20 +42,21 @@
     }
 }
 
-@keyframes disappear {
+@keyframes blurAppear {
     0% {
-        opacity: 0.8;
-    }
-
-    33% {
-        opacity: 0.6;
-    }
-   
-    99% {
-        opacity: 0.4;
-    
+        filter: blur(50px);
     }
     100% {
+        filter: none;
+        z-index: 100;
+    }
+}
+
+@keyframes disappear {
+    0% {
+    }
+    100% {
+        opacity: 0;
         z-index: -100;
     }
 }

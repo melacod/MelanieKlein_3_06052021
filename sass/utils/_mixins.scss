@@ -16,7 +16,7 @@
 }
 
 // Mixin pour les propriétés de l'animation leftToRight
-@mixin leftToRightWithPauseProperties ($i, $bullets: $loader-bullets, $duration: $loader-duration, $delay-offset: $loader-delay-offset) {
+@mixin leftToRightWithPauseProperties ($i, $bullets: $loader-bullets, $duration: $loader-bullet-duration, $delay-offset: $loader-delay-offset) {
     animation: leftToRightWithPause $duration ease-in-out forwards 1;
     animation-delay: ($loader-bullets - $i) * $delay-offset;
     @if ($i % 2 == 1) {
