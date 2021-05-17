@@ -21,4 +21,14 @@
     small {
         width: 90%;
     }
+
+    @include screen-min (large) {
+        strong {
+            font-size: 0.9rem;
+        }
+        small {
+            font-size: 0.75rem;
+        }
+    }
+
 }

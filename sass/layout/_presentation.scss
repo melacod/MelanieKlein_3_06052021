@@ -29,14 +29,6 @@
 
     &__content {
         width: 100%;
-
-        @include screen-min (tablet) {
-            width: 70%;
-        }
-
-        @include screen-min (large) {
-            width: 80%;
-        }
     }
 
     &__button {

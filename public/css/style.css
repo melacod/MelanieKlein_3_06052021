@@ -340,6 +340,21 @@ input {
   }
 }
 
+.nouveau::after {
+  content: "Nouveau";
+  position: absolute;
+  margin-left: -93px;
+  margin-top: 15px;
+  color: #008766;
+  background-color: #99e2d0;
+  height: 30px;
+  width: 80px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 3px;
+}
+
 .plat {
   cursor: pointer;
   width: 100%;
@@ -361,6 +376,14 @@ input {
 }
 .plat small {
   width: 90%;
+}
+@media screen and (min-width: 1200px) {
+  .plat strong {
+    font-size: 0.9rem;
+  }
+  .plat small {
+    font-size: 0.75rem;
+  }
 }
 
 .restaurant {
@@ -388,20 +411,6 @@ input {
   width: 100%;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
-}
-.restaurant__image--nouveau::after {
-  content: "Nouveau";
-  position: absolute;
-  margin-left: -93px;
-  margin-top: 15px;
-  color: #008766;
-  background-color: #99e2d0;
-  height: 30px;
-  width: 80px;
-  font-weight: 500;
-  text-align: center;
-  padding-top: 5px;
-  border-radius: 3px;
 }
 .restaurant__text {
   height: 75px;
@@ -534,8 +543,6 @@ input {
 @media screen and (min-width: 768px) {
   .container {
     background-color: #f6f6f6;
-    padding-left: 20px;
-    padding-right: 20px;
     margin: auto;
   }
 }
@@ -640,7 +647,7 @@ input {
 }
 @media screen and (min-width: 1200px) {
   .plats {
-    width: 30%;
+    width: 31%;
   }
 }
 .plats__title {
@@ -695,16 +702,6 @@ input {
 }
 .presentation__content {
   width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .presentation__content {
-    width: 70%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .presentation__content {
-    width: 80%;
-  }
 }
 .presentation__button {
   margin-top: 50px;
