@@ -6,13 +6,6 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: stretch;
-        background-color: white;
         margin-bottom: 30px;
-    }
-}
-
-.footer.index {
-    @include screen-min (large) {
-        padding-left: 20%;
     }
 }

@@ -30,36 +30,7 @@
     opacity: 1;
   }
 }
-.loader {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.95);
-  margin: 0;
-  padding: 0;
-  opacity: 1;
-  z-index: 50;
-}
-
-.loader--inner {
-  transform: translateY(-50%);
-  top: 50%;
-  position: absolute;
-  width: 100%;
-  color: #9356dc;
-  padding: 0 100px;
-  text-align: center;
-}
-
-.loader--inner label {
-  font-size: 20px;
-  opacity: 0;
-  display: inline-block;
-}
-
-@keyframes lol {
+@keyframes leftToRightWithPause {
   0% {
     opacity: 0;
     transform: translateX(-300px);
@@ -72,9 +43,12 @@
     opacity: 1;
     transform: translateX(0px);
   }
-  100% {
+  99% {
     opacity: 0;
     transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(0px);
   }
 }
 @keyframes disappear {
@@ -91,37 +65,6 @@
     z-index: -100;
   }
 }
-.loader--inner label:nth-child(6) {
-  animation: lol 3s ease-in-out forwards;
-}
-
-.loader--inner label:nth-child(5) {
-  animation: lol 3s 150ms ease-in-out forwards;
-  color: #ff79da;
-}
-
-.loader--inner label:nth-child(4) {
-  animation: lol 3s 300ms ease-in-out forwards;
-}
-
-.loader--inner label:nth-child(3) {
-  animation: lol 3s 450ms ease-in-out forwards;
-  color: #ff79da;
-}
-
-.loader--inner label:nth-child(2) {
-  animation: lol 3s 600ms ease-in-out forwards;
-}
-
-.loader--inner label:nth-child(1) {
-  animation: lol 3s 750ms ease-in-out forwards;
-  color: #ff79da;
-}
-
-.loader {
-  animation: disappear 9s ease-in-out forwards;
-}
-
 *,
 *::after,
 *::before {
@@ -221,6 +164,7 @@ input {
   display: block;
   height: 70px;
   width: 70px;
+  cursor: pointer;
 }
 
 .heart .heart--empty {
@@ -290,6 +234,67 @@ input {
 
 .heart:hover .heart--empty {
   height: 0px;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  z-index: 50;
+  animation: disappear 9s ease-in-out forwards;
+}
+
+.loader--inner {
+  transform: translateY(-50%);
+  top: 50%;
+  position: absolute;
+  width: 100%;
+  color: #9356dc;
+  padding: 0 100px;
+  text-align: center;
+}
+
+.loader--inner label {
+  font-size: 40px;
+  opacity: 0;
+  display: inline-block;
+}
+
+.loader--inner label:nth-child(1) {
+  animation: leftToRightWithPause 3s ease-in-out forwards 1;
+  animation-delay: 750ms;
+  color: #9356dc;
+}
+.loader--inner label:nth-child(2) {
+  animation: leftToRightWithPause 3s ease-in-out forwards 1;
+  animation-delay: 600ms;
+  color: #ff79da;
+}
+.loader--inner label:nth-child(3) {
+  animation: leftToRightWithPause 3s ease-in-out forwards 1;
+  animation-delay: 450ms;
+  color: #9356dc;
+}
+.loader--inner label:nth-child(4) {
+  animation: leftToRightWithPause 3s ease-in-out forwards 1;
+  animation-delay: 300ms;
+  color: #ff79da;
+}
+.loader--inner label:nth-child(5) {
+  animation: leftToRightWithPause 3s ease-in-out forwards 1;
+  animation-delay: 150ms;
+  color: #9356dc;
+}
+.loader--inner label:nth-child(6) {
+  animation: leftToRightWithPause 3s ease-in-out forwards 1;
+  animation-delay: 0ms;
+  color: #ff79da;
 }
 
 .menu {
@@ -424,6 +429,7 @@ input {
 .searchbar {
   text-align: center;
   background-color: #f6f6f6;
+  width: 100%;
   padding-bottom: 30px;
   border-top: 2px solid #cecccc;
 }
@@ -434,7 +440,7 @@ input {
 }
 @media screen and (min-width: 768px) {
   .searchbar__location {
-    background-color: white;
+    background-color: inherit;
   }
 }
 .searchbar__location input {
@@ -469,16 +475,15 @@ input {
 }
 @media screen and (min-width: 768px) {
   .searchbar {
-    width: 45%;
+    width: 50%;
     margin: 0;
     padding-bottom: 0;
-    background-color: white;
     border: none;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .searchbar {
-    width: 30%;
+    width: 40%;
   }
 }
 
@@ -520,6 +525,21 @@ input {
   font-weight: 500;
 }
 
+.container {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    background-color: #f6f6f6;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+  }
+}
+
 .footer {
   background-color: #353535;
   padding: 27px;
@@ -551,18 +571,9 @@ input {
   text-align: center;
   margin-right: 8px;
 }
-@media screen and (min-width: 768px) {
-  .footer {
-    padding-left: 15%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer {
-    padding-left: 10%;
-  }
-}
 
 .header {
+  width: 100%;
   height: 64px;
   padding-top: 24px;
   padding-bottom: 14px;
@@ -588,7 +599,6 @@ input {
   .header {
     height: 66px;
     padding-top: 24px;
-    width: 100%;
   }
 }
 
@@ -607,16 +617,16 @@ input {
 }
 @media screen and (min-width: 768px) {
   .operation {
-    width: 45%;
+    width: 50%;
     margin: 0;
   }
   .operation > h1 {
     margin-top: 10px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .operation {
-    width: 30%;
+    width: 40%;
   }
 }
 
@@ -710,12 +720,12 @@ input {
 }
 @media screen and (min-width: 768px) {
   .restaurants {
+    background-color: white;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 90%;
     margin: auto;
     border-radius: 25px;
     padding-top: 20px;
@@ -729,11 +739,6 @@ input {
     width: 45%;
   }
 }
-@media screen and (min-width: 1200px) {
-  .restaurants {
-    width: 60%;
-  }
-}
 
 @media screen and (min-width: 768px) {
   .main.index {
@@ -743,14 +748,7 @@ input {
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
-    background-color: white;
     margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer.index {
-    padding-left: 20%;
   }
 }
 

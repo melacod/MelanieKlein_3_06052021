@@ -39,12 +39,5 @@
 
   }
 
-  @include screen-min (tablet) {
-    padding-left: 15%;
-  }
-
-  @include screen-min (large) {
-    padding-left: 10%;
-  }
 
 }

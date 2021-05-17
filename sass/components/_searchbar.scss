@@ -1,6 +1,7 @@
 .searchbar {
   text-align: center;
   background-color: #f6f6f6;
+  width: 100%;
   padding-bottom: 30px;
   border-top: 2px solid rgb(206, 204, 204);
 
@@ -10,7 +11,7 @@
     color: #4b4b4b;
 
     @include screen-min(tablet) {
-      background-color: white;
+      background-color: inherit;
     }
 
     input {
@@ -19,10 +20,9 @@
 
       @include screen-min(tablet) {
         font-size: 1.2rem;
-		    width: 195px;
-		    border-bottom: solid 2px $color-primary;
+        width: 195px;
+        border-bottom: solid 2px $color-primary;
       }
-
     }
   }
 
@@ -38,7 +38,7 @@
     font-size: 1.1rem;
     font-weight: 300;
 
-    @include screen-min (desktop) {
+    @include screen-min(desktop) {
       font-size: 1.2rem;
     }
   }
@@ -47,16 +47,14 @@
     margin: 25px;
   }
 
-  @include screen-min(tablet) {
-      width: 45%;
-      margin: 0;
-      padding-bottom: 0;
-      background-color: white;
-      border: none;
+  @include screen-min (tablet) {
+    width: 50%;
+    margin: 0;
+    padding-bottom: 0;
+    border: none;
   }
 
-  @include screen-min(large) {
-      width: 30%;
+  @include screen-min (desktop) {
+    width: 40%;
   }
-
 }
