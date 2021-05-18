@@ -10,30 +10,26 @@
     opacity: 1;
     z-index: 50;
     animation: disappear $loader-duration * 2 ease-in-out forwards;
-}
 
-.loader--inner {
-    transform: translateY(-50%);
-    top: 50%;
-    position: absolute;
-    width: 100%;
-    color: $color-primary;
-    padding: 0 100px;
-    text-align: center;
-}
+    &__inner {
+        //transform: translateY(-50%);
+        top: 50%;
+        position: absolute;
+        width: 100%;
+        padding: 0 100px;
+        text-align: center;
 
-.loader--inner label {
-    font-size: $loader-bullet-size;
-    opacity: 0;
-    display: inline-block;
-}
-
-.loader--inner {
-    @for $i from 1 through $loader-bullets {
-        & label:nth-child(#{$i}) {
-            @include leftToRightWithPauseProperties($i);
+        label {
+            font-size: $loader-bullet-size;
+            opacity: 0;
+            display: inline-block;
         }
+
+        @for $i from 1 through $loader-bullets {
+            label:nth-child(#{$i}) {
+                @include leftToRightWithPauseProperties($i, $loader-bullets, $loader-bullet-duration, $loader-delay-offset);
+            }
+        }
+
     }
 }
-
-
