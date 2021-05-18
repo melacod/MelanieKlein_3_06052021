@@ -1,11 +1,11 @@
 .container {
   width: 100%;
-  max-width: 1024px;
+  max-width: 1080px;
   display: flex;
   flex-direction: column;
   
   @include screen-min(tablet) {
-    background-color: #f6f6f6;
+    background-color: #fdfdfd;
     margin: auto;
   }
 

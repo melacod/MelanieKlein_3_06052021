@@ -4,6 +4,9 @@
   width: 100%;
   padding-bottom: 30px;
   border-top: 2px solid rgb(206, 204, 204);
+    @include screen-min(tablet) {
+      background-color: #fdfdfd;
+    }
 
   &__location {
     background-color: #eaeaea;

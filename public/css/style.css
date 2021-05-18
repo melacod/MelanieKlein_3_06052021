@@ -442,6 +442,11 @@ input {
   padding-bottom: 30px;
   border-top: 2px solid #cecccc;
 }
+@media screen and (min-width: 768px) {
+  .searchbar {
+    background-color: #fdfdfd;
+  }
+}
 .searchbar__location {
   background-color: #eaeaea;
   line-height: 48px;
@@ -536,13 +541,13 @@ input {
 
 .container {
   width: 100%;
-  max-width: 1024px;
+  max-width: 1080px;
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .container {
-    background-color: #f6f6f6;
+    background-color: #fdfdfd;
     margin: auto;
   }
 }
@@ -720,7 +725,7 @@ input {
 }
 @media screen and (min-width: 768px) {
   .restaurants {
-    background-color: white;
+    background-color: #f6f6f6;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
