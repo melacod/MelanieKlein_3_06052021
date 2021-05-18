@@ -148,6 +148,11 @@ input {
   font-size: 1rem;
   box-shadow: 0px 5px 10px 1px #cecccc;
   border: 1px solid #cecccc;
+  opacity: 1;
+}
+.button :hover::after {
+  opacity: 0.7;
+  box-shadow: 0px 8px 12px 3px #cecccc;
 }
 @media screen and (min-width: 992px) {
   .button {
@@ -261,7 +266,7 @@ input {
 }
 
 .loader--inner label {
-  font-size: 40px;
+  font-size: 22px;
   opacity: 0;
   display: inline-block;
 }
@@ -524,7 +529,7 @@ input {
   color: white;
   background-color: #9356dc;
   font-size: 0.8rem;
-  margin-left: -15px;
+  margin-left: -12px;
   border-radius: 100%;
   padding-left: 8px;
   padding-right: 8px;
