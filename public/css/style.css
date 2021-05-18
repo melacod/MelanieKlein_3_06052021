@@ -53,9 +53,13 @@
 }
 @keyframes blurAppear {
   0% {
-    filter: blur(50px);
+    opacity: 0.1;
+  }
+  80% {
+    opacity: 0.1;
   }
   100% {
+    opacity: 1;
     filter: none;
     z-index: 100;
   }
@@ -146,13 +150,13 @@ input {
   padding: 14px 21px 14px 21px;
   font-weight: 500;
   font-size: 1rem;
-  box-shadow: 0px 5px 10px 1px #cecccc;
-  border: 1px solid #cecccc;
-  opacity: 1;
+  box-shadow: 0px 5px 10px #cecccc;
+  border: 0px solid;
 }
-.button :hover::after {
-  opacity: 0.7;
-  box-shadow: 0px 8px 12px 3px #cecccc;
+.button:hover {
+  content: "";
+  opacity: 0.9;
+  box-shadow: 0px 5px 12px 1px #6d6c6c;
 }
 @media screen and (min-width: 992px) {
   .button {

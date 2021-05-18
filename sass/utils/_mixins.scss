@@ -103,9 +103,9 @@
 }
 
 @mixin survol-btn(){
-    :hover{
-        &::after {
-            opacity: 0.7;
-            box-shadow: 0px 8px 12px 3px rgb(206, 204, 204);
-        }}
+    &:hover{
+        content: "";
+        opacity: 0.9;
+        box-shadow: 0px 5px 12px 1px rgb(109, 108, 108);
+    }
 }
