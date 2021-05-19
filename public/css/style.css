@@ -360,32 +360,74 @@ input {
 
 .plat {
   cursor: pointer;
-  width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
   background-color: #F6F6F6;
   border: #F4F4F4 1px solid;
   border-radius: 15px;
-  margin-top: 12px;
   box-shadow: 1px 1px 15px #cecccc;
+  margin: 16px 0;
   padding: 13px;
-  height: 70px;
+  max-width: 100%;
+  overflow: hidden;
 }
-.plat strong {
-  width: 100%;
+.plat__details {
+  flex: 1;
+  margin: 0;
+  overflow: hidden;
 }
-.plat small {
-  width: 90%;
+.plat__title {
+  font-weight: bold;
+}
+.plat__title, .plat__description {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.plat__price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 10px;
+}
+.plat__checker {
+  color: white;
+  background-color: #99e2d0;
+  border: 1px solid #99e2d0;
+  border-radius: 0 15px 15px 0;
+  box-shadow: 1px 1px 15px #cecccc;
+  position: relative;
+  width: 70px;
+  margin: -16px -86px -16px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition-duration: 1.5s;
+}
+.plat__checker span {
+  padding: 1.5px 2.5px 2px 1.5px;
+  font-size: 0.8rem;
+  color: #99e2d0;
+  background-color: white;
+  border-radius: 100%;
+  transition-duration: 1.5s;
+}
+.plat:hover .plat__checker {
+  margin: -16px -16px -16px 16px;
+}
+.plat:hover .plat__checker span {
+  transform: rotate(360deg);
 }
 @media screen and (min-width: 1200px) {
-  .plat strong {
+  .plat__title {
     font-size: 0.9rem;
   }
-  .plat small {
+  .plat__description {
     font-size: 0.75rem;
+  }
+  .plat__price {
+    font-size: 0.9rem;
   }
 }
 
