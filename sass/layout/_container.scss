@@ -10,7 +10,7 @@
   }
 
   &--animate {
-    animation: blurAppear $loader-duration ease-in-out forwards;
+    animation: slowAppear $loader-duration ease-in-out forwards;
   }
   
 }

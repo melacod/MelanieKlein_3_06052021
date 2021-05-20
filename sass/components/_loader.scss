@@ -9,7 +9,7 @@
     padding: 0;
     opacity: 1;
     z-index: 50;
-    animation: disappear $loader-duration * 2 ease-in-out forwards;
+    animation: disappear $loader-duration ease-in-out forwards;
 
     &__inner {
         //transform: translateY(-50%);
