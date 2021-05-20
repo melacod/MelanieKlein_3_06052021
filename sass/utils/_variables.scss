@@ -33,7 +33,5 @@ $smooth-appear-delay-offset: 200ms;
 $loader-bullets: 6;
 $loader-bullet-size: 22px;
 $loader-bullet-duration: 3s;
-$loader-delay: 0ms;
 $loader-delay-offset: 150ms;
-
 $loader-duration: $loader-bullet-duration + ($loader-bullets * $loader-delay-offset);
