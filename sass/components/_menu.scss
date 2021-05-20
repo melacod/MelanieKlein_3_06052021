@@ -7,17 +7,12 @@
     padding-left: 15px;
 
     &__title {
-        @include font-titre;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding-left: 10px;
         
-        font-size: 1.5rem;
-        font-weight: 500;
-        
         @include screen-min (tablet) {
-            font-size: 1.7rem;
             padding-right: 10px;
         }
 
