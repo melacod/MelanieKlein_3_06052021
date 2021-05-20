@@ -15,16 +15,15 @@
     animation-delay: $delay + ( ($i - 1) * $delay-offset);
 }
 
-// Mixin pour les propriétés de l'animation leftToRight
-@mixin leftToRightWithPauseProperties ($i, $bullets, $duration, $delay-offset) {
-    animation: leftToRightWithPause $duration ease-in-out forwards 1;
+// Mixin pour les propriétés de l'animation move
+@mixin moveBullet ($i, $bullets, $duration, $delay-offset) {
+    animation: move $duration ease-in-out forwards 1;
     animation-delay: ($loader-bullets - $i) * $delay-offset;
     @if ($i % 2 == 1) {
         color: $color-primary;
     } @else {
         color: $color-secondary;
     }
-    
 }
 
 // Applique la media query pour le breakpoint demandé

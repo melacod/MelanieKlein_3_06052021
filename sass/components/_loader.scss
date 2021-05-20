@@ -27,7 +27,7 @@
 
         @for $i from 1 through $loader-bullets {
             label:nth-child(#{$i}) {
-                @include leftToRightWithPauseProperties($i, $loader-bullets, $loader-bullet-duration, $loader-delay-offset);
+                @include moveBullet($i, $loader-bullets, $loader-bullet-duration, $loader-delay-offset);
             }
         }
 
