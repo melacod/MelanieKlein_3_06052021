@@ -24,7 +24,6 @@ $breakpoints: (
 );
 
 // animations
-
 $smooth-appear-duration: 1100ms;
 $smooth-appear-delay: 100ms;
 $smooth-appear-delay-offset: 200ms;
@@ -35,3 +34,8 @@ $loader-bullet-size: 22px;
 $loader-bullet-duration: 3s;
 $loader-delay-offset: 150ms;
 $loader-duration: $loader-bullet-duration + ($loader-bullets * $loader-delay-offset);
+
+// heart
+$heart-width: 36px;
+$heart-height: 59px;
+$heart-offset: 3px;

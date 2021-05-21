@@ -101,6 +101,7 @@
     cursor: pointer;
 }
 
+// Eclaircir le bouton tout en accentuant son ombre au survol
 @mixin survol-btn(){
     &:hover{
         content: "";
