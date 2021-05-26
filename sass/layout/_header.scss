@@ -12,7 +12,9 @@
     align-items: center;
 
     &__back {
-        
+        @include screen-min (tablet){
+            visibility: hidden;
+        }
         &--hidden {
             visibility: hidden;
         }
